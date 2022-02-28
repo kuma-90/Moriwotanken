@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine.Events;
 
-public class Event : MonoBehaviour
+public sealed class IntEvent : UnityEvent<int>//inr型のイベント作成
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+public sealed class BoolEvent : UnityEvent<bool>//bool型のイベント作成
+{
+}
+
+public sealed class FloatEvent : UnityEvent<float>//float型のイベント作成
+{
+}
+public sealed class StringEvent : UnityEvent<string>//string型のイベント作成
+{
+}
+public sealed class Event : UnityEvent
+{
 }
