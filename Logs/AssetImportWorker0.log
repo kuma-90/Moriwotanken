@@ -1000,3 +1000,227 @@ System memory in use after: 149.4 MB.
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1680.
 Total: 2.120416 ms (FindLiveObjects: 0.348056 ms CreateObjectMapping: 0.104880 ms MarkObjects: 1.604380 ms  DeleteObjects: 0.061348 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 925.220403 seconds.
+  path: Assets/Scenes/Stage1.unity
+  artifactKey: Guid(fd3e720087a7a4f87b854ce33e7cc6f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Stage1.unity using Guid(fd3e720087a7a4f87b854ce33e7cc6f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15361c35fdf25a416f1cc8bff55c4242') in 0.070470 seconds
+  Import took 0.086697 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000934 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.275 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1123 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.8 MB.
+System memory in use after: 149.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1683.
+Total: 6.321949 ms (FindLiveObjects: 1.049486 ms CreateObjectMapping: 0.075369 ms MarkObjects: 5.078122 ms  DeleteObjects: 0.117294 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000621 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.101 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1123 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.0 MB.
+System memory in use after: 150.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1686.
+Total: 1.953112 ms (FindLiveObjects: 0.244772 ms CreateObjectMapping: 0.056607 ms MarkObjects: 1.585197 ms  DeleteObjects: 0.065019 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 861.547631 seconds.
+  path: Assets/TeddyBear1.3/animations/animationsTEST.controller
+  artifactKey: Guid(5a73c90055630e248b9de2fb8d010dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/animations/animationsTEST.controller using Guid(5a73c90055630e248b9de2fb8d010dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2925fb38fda26ce1409e1faf2de3f1c') in 1.596129 seconds
+  Import took 1.607622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001413 seconds.
+  path: Assets/TeddyBear1.3/animations/animationsTEST_idles.controller
+  artifactKey: Guid(68562f016dfa4a2439382e4c8fdb00d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/animations/animationsTEST_idles.controller using Guid(68562f016dfa4a2439382e4c8fdb00d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7318320cfef2a5fd23d5dc795b1aba0c') in 0.145782 seconds
+  Import took 0.149873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/TeddyBear1.3/animations/animationTEST_navigation.controller
+  artifactKey: Guid(ba9084254204f244fa2563be32416b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/animations/animationTEST_navigation.controller using Guid(ba9084254204f244fa2563be32416b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc9fd48cd4266bd76637c1c6c6837f0') in 0.020520 seconds
+  Import took 0.024793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.678274 seconds.
+  path: Assets/TeddyBear1.3/animations/idle1.FBX
+  artifactKey: Guid(a0864ddaa7b82514c9b0afd1e3889c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/animations/idle1.FBX using Guid(a0864ddaa7b82514c9b0afd1e3889c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb440642d3d584261c62d001dab744d5') in 1.166799 seconds
+  Import took 1.171243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.047805 seconds.
+  path: Assets/TeddyBear1.3/models/TeddyBear.FBX
+  artifactKey: Guid(0e8915349da353f4d8bc41bdc089faad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/models/TeddyBear.FBX using Guid(0e8915349da353f4d8bc41bdc089faad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edce06e5c1b305aa25b1acb00c5296b5') in 0.156028 seconds
+  Import took 0.165347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.224915 seconds.
+  path: Assets/TeddyBear1.3/prefabs
+  artifactKey: Guid(290e2b1daaa68cb46bd134d1a95a8848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/prefabs using Guid(290e2b1daaa68cb46bd134d1a95a8848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63339f3e6e44b615a7a05450a5fabec6') in 0.002089 seconds
+  Import took 0.012318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002855 seconds.
+  path: Assets/TeddyBear1.3/prefabs
+  artifactKey: Guid(290e2b1daaa68cb46bd134d1a95a8848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/prefabs using Guid(290e2b1daaa68cb46bd134d1a95a8848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63339f3e6e44b615a7a05450a5fabec6') in 0.001119 seconds
+  Import took 0.003913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.515562 seconds.
+  path: Assets/TeddyBear1.3/scenes/data/idlesad.controller
+  artifactKey: Guid(c50052b3a275d7e4e9e1a58c86e1fb51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/scenes/data/idlesad.controller using Guid(c50052b3a275d7e4e9e1a58c86e1fb51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbeb82f831fca6a3bac1f154a6030cfe') in 0.032023 seconds
+  Import took 0.034814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.687734 seconds.
+  path: Assets/TeddyBear1.3/scenes/data/idle2.controller
+  artifactKey: Guid(0acfd3951c51f3345b92061126074724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/scenes/data/idle2.controller using Guid(0acfd3951c51f3345b92061126074724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb4b49d8f5cf2f94d968822a28c35ff5') in 0.012737 seconds
+  Import took 0.016267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.612702 seconds.
+  path: Assets/TeddyBear1.3/scenes/data/idle1.controller
+  artifactKey: Guid(26ff47c5542293a448b714389eabdbed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/scenes/data/idle1.controller using Guid(26ff47c5542293a448b714389eabdbed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eedf2ccde0dba4ecf615fbb98eac5cf') in 0.019910 seconds
+  Import took 0.026523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.998201 seconds.
+  path: Assets/TeddyBear1.3/scenes/data/idle3.controller
+  artifactKey: Guid(e29707f97c14e5d40a3a08a42d95880b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/scenes/data/idle3.controller using Guid(e29707f97c14e5d40a3a08a42d95880b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '490efc71fe53c175df133ac9d6189def') in 0.010727 seconds
+  Import took 0.015300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003159 seconds.
+  path: Assets/TeddyBear1.3/scenes/data/idle3.controller
+  artifactKey: Guid(e29707f97c14e5d40a3a08a42d95880b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/scenes/data/idle3.controller using Guid(e29707f97c14e5d40a3a08a42d95880b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '490efc71fe53c175df133ac9d6189def') in 0.024115 seconds
+  Import took 0.031491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.652459 seconds.
+  path: Assets/TeddyBear1.3/scenes/data/idlesit.controller
+  artifactKey: Guid(e29b641f89e753f4682eb0cd592a46c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/scenes/data/idlesit.controller using Guid(e29b641f89e753f4682eb0cd592a46c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1ba43755843873d710bc500cc978a14') in 0.021435 seconds
+  Import took 0.027472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.774769 seconds.
+  path: Assets/TeddyBear1.3/scenes/data/walk2.controller
+  artifactKey: Guid(2fe89daf6964efa418fc239eee84bde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/scenes/data/walk2.controller using Guid(2fe89daf6964efa418fc239eee84bde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4af88642a30414520c72cb4e7a44992') in 0.011209 seconds
+  Import took 0.015512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.567539 seconds.
+  path: Assets/TeddyBear1.3/scenes/data/walk01.controller
+  artifactKey: Guid(c4f43374c786f7d45975e39c9f9f6561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/scenes/data/walk01.controller using Guid(c4f43374c786f7d45975e39c9f9f6561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '190de7d894b6a2a54cf0d18dd2ce83c9') in 0.003668 seconds
+  Import took 0.006389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.525283 seconds.
+  path: Assets/TeddyBear1.3/scenes/data/walk03.controller
+  artifactKey: Guid(b01912de683a6474baebcb49f462f84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/scenes/data/walk03.controller using Guid(b01912de683a6474baebcb49f462f84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a990d17c8b2c5a8b824d027db760f6') in 0.004988 seconds
+  Import took 0.007997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.667112 seconds.
+  path: Assets/TeddyBear1.3/scenes/data/walk05.controller
+  artifactKey: Guid(238f42c0aaa023b4eb8322a282c9c3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/scenes/data/walk05.controller using Guid(238f42c0aaa023b4eb8322a282c9c3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0319f329f2331823ddc619bbf094c5f5') in 0.019283 seconds
+  Import took 0.023569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 424.197575 seconds.
+  path: Assets/TeddyBear1.3/animations/walk.FBX
+  artifactKey: Guid(f01dd110dec24c84881ccd5085986bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeddyBear1.3/animations/walk.FBX using Guid(f01dd110dec24c84881ccd5085986bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1ac36b61074deb27634d4b3085f95c6') in 0.251290 seconds
+  Import took 0.292134 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003570 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.762 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1123 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.4 MB.
+System memory in use after: 177.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1700.
+Total: 5.744470 ms (FindLiveObjects: 0.722286 ms CreateObjectMapping: 0.063525 ms MarkObjects: 4.841184 ms  DeleteObjects: 0.116315 ms)
+
