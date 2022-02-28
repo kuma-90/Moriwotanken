@@ -18,7 +18,9 @@ public class StartModel : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+
             StartButton.Invoke();
+
         }
 
     }

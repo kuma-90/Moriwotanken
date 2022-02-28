@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class StartPresenter : MonoBehaviour
+
 {
+    [SerializeField] private StartModel _model;
+    [SerializeField] private StageSelectView _view;
     // Start is called before the first frame update
     void Start()
     {
+
+        _model.StartButton.AddListener(() => _view.ChangeScene());
 
     }
 
@@ -16,9 +21,5 @@ public class StartPresenter : MonoBehaviour
     {
 
     }
-
-    public void ChangeScene()
-    {
-        SceneManager.LoadScene("StageSelect");
-    }
 }
+

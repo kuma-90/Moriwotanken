@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class StageSelectView : MonoBehaviour
 {
-    [SerializeField] private StartModel _model;
-    [SerializeField] private StartPresenter _presenter;
+
 
     // Start is called before the first frame update
     void Start()
@@ -14,8 +16,17 @@ public class StageSelectView : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+
+
+
+    public void ChangeScene()
     {
-        _model.StartButton.AddListener(() => _presenter.ChangeScene());
+        SceneManager.LoadScene("StageSelect");
     }
+
+    public void OnClickChangeStage1()
+    {
+        SceneManager.LoadScene("Stage1");
+    }
+
 }
