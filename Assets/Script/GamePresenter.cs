@@ -16,7 +16,7 @@ public class GamePresenter : MonoBehaviour
 
         _view.Mae.AddListener(() => _bear.MaeStraight());
         _view.Ushiro.AddListener(() => _bear.UshiroStraight());
-        _view.Migi.AddListener(() => _bear.MaeStraight());
+        _view.Migi.AddListener(() => _bear.MigiStraight());
         _view.Hidari.AddListener(() => _bear.HidariStraight());
 
 
@@ -24,11 +24,14 @@ public class GamePresenter : MonoBehaviour
 
 
         _honey.HoneyTouch.AddListener(() => _model.AfterHoneyTouch());
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
+
+        _honeytrap.HoneyTrapTouch.AddListener(() => _model.AfterHoneyTrapTouch());
+
+
+        _model.SendAppleCounter.AddListener((Apple) => _view.SetAppleCounter(Apple));
+        _model.SendHoneyCounter.AddListener((Honey) => _view.SetHoneyCounter(Honey));
+        _model.SendHoneyTrapCounter.AddListener((HoneyTrap) => _view.SetHoneyTrapCounter(HoneyTrap));
 
     }
 }

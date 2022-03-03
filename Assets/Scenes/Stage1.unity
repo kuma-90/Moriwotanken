@@ -894,6 +894,10 @@ MonoBehaviour:
   Migi:
     m_PersistentCalls:
       m_Calls: []
+  Time: {fileID: 223715862}
+  Apple: {fileID: 698972456}
+  Honey: {fileID: 736617525}
+  HoneyTrap: {fileID: 941369364}
 --- !u!114 &257689361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,6 +928,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92a5d91e96eb413197737b84ea0ca43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Timer: 0
+  MaxTime: 0
+  _SendAppleCounter: 0
+  _SendHoneyCounter: 0
+  _SendHoneyTrapCounter: 0
 --- !u!4 &257689365
 Transform:
   m_ObjectHideFlags: 0
@@ -1740,7 +1749,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6301\u3063\u3066\u308B\u308A\u3093\u3054"
+  m_Text: 
 --- !u!222 &698972457
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2055,7 +2064,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6301\u3063\u3066\u308B\u306F\u3061\u307F\u3064"
+  m_Text: 
 --- !u!222 &736617526
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2158,6 +2167,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d093d2f9cf64041f78acffb9f638e834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoneyTrapTouch:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &891707423
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2304,7 +2316,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7F60\u306B\u304B\u304B\u3063\u305F\u56DE\u6570"
+  m_Text: 
 --- !u!222 &941369365
 CanvasRenderer:
   m_ObjectHideFlags: 0

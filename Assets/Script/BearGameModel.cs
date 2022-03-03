@@ -22,11 +22,6 @@ public class BearGameModel : MonoBehaviour
 
 
 
-
-
-
-
-
     }
 
     public void MaeStraight()

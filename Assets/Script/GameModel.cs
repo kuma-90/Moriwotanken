@@ -1,24 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine;
+
 
 public class GameModel : MonoBehaviour
 {
     public float Timer;
     public float MaxTime;
 
-    public int AppleCounter = 0;
-    public int HoneyCounter = 0;
-    public int HoneyTrapCounter = 0;
+    private int AppleCounter = 0;
+    private int HoneyCounter = 0;
+    private int HoneyTrapCounter = 0;
 
     public IntEvent SendAppleCounter = new IntEvent();
     public IntEvent SendHoneyCounter = new IntEvent();
     public IntEvent SendHoneyTrapCounter = new IntEvent();
 
+
     public int _SendAppleCounter;
     public int _SendHoneyCounter;
     public int _SendHoneyTrapCounter;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,12 +39,20 @@ public class GameModel : MonoBehaviour
     public void AfterAppleTouch()
     {
         AppleCounter += 1;
+
     }
 
     public void AfterHoneyTouch()
     {
         HoneyCounter += 1;
+
     }
+
+    public void AfterHoneyTrapTouch()
+    {
+
+    }
+
 
     public void SendApple(int Apple)
     {
