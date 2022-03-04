@@ -33,6 +33,8 @@ public class GamePresenter : MonoBehaviour
         _model.SendAppleCounter.AddListener((Apple) => _view.SetAppleCounter(Apple));
         _model.SendHoneyCounter.AddListener((Honey) => _view.SetHoneyCounter(Honey));
         _model.SendHoneyTrapCounter.AddListener((HoneyTrap) => _view.SetHoneyTrapCounter(HoneyTrap));
+        _model.SendTimer.AddListener((Time) => _view.SetTimer(Time));
+        _model.GameOverBool.AddListener(() => _view.GameOverPause());
 
     }
 }

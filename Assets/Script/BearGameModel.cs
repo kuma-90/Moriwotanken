@@ -13,7 +13,7 @@ public class BearGameModel : MonoBehaviour
     void Start()
     {
         animator = kumachan.GetComponent<Animator>();
-        animator.SetBool("Walk", true);
+        animator.SetBool("Base", true);
     }
 
     // Update is called once per frame
@@ -27,21 +27,31 @@ public class BearGameModel : MonoBehaviour
     public void MaeStraight()
     {
         kumachan.transform.position += new Vector3(0, 0, speed) * Time.deltaTime;
+        animator.SetBool("Walk", true);
+        animator.SetBool("Base", false);
+
     }
 
     public void UshiroStraight()
     {
         kumachan.transform.position += new Vector3(0, 0, -speed) * Time.deltaTime;
+        animator.SetBool("Walk", true);
+        animator.SetBool("Base", false);
     }
 
     public void HidariStraight()
     {
         kumachan.transform.position += new Vector3(-speed, 0, 0) * Time.deltaTime;
+        animator.SetBool("Walk", true);
+        animator.SetBool("Base", false);
     }
 
     public void MigiStraight()
     {
         kumachan.transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+        animator.SetBool("Walk", true);
+        animator.SetBool("Base", false);
+
     }
 
 }

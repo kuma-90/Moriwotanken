@@ -6,8 +6,9 @@ using UnityEngine;
 
 public class GameModel : MonoBehaviour
 {
-    public float Timer;
-    public float MaxTime;
+
+    private float countdown = 2.0f;
+    private int minute;
 
     private int AppleCounter = 0;
     private int HoneyCounter = 0;
@@ -16,8 +17,11 @@ public class GameModel : MonoBehaviour
     public IntEvent SendAppleCounter = new IntEvent();
     public IntEvent SendHoneyCounter = new IntEvent();
     public IntEvent SendHoneyTrapCounter = new IntEvent();
+    public IntEvent SendMinuteTime = new IntEvent();
 
+    public FloatEvent SendTimer = new FloatEvent();
 
+    public UnityEvent GameOverBool = new UnityEvent();
 
 
     // Start is called before the first frame update
@@ -29,8 +33,21 @@ public class GameModel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        countdown -= Time.deltaTime;
 
+        //if (countdown  60f)
+        //{
+        //    minute += 1;
+        //    countdown = 60.0f;
+        //}
+        SendTime(countdown);
+        if (countdown <= 0)
+        {
+            countdown = 0;
+            GameOverBool.Invoke();
+        }
     }
+
 
     public void AfterAppleTouch()
     {
@@ -86,6 +103,17 @@ public class GameModel : MonoBehaviour
 
         SendHoneyTrapCounter.Invoke(HoneyTrap);
     }
+
+    public void SendTime(float Time)
+    {
+        SendTimer.Invoke(Time);
+    }
+
+    public void SendMinute(int MinuteTime)
+    {
+        SendMinuteTime.Invoke(MinuteTime);
+    }
+
 
 
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameView : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class GameView : MonoBehaviour
     public UnityEvent UseApple = new UnityEvent();
     public UnityEvent UseHoney = new UnityEvent();
 
+
     public Text Time;
     public Text Apple;
     public Text Honey;
@@ -21,6 +23,14 @@ public class GameView : MonoBehaviour
     private int AppleCount;
     private int HoneyCount;
     private int HoneyTrapCount;
+    //private int Minutes;
+
+    private float Timer;
+
+    [SerializeField]
+    private GameObject gameClearPauseUI;
+    [SerializeField]
+    private GameObject gameOverPauseUI;
 
 
     // Start is called before the first frame update
@@ -65,8 +75,26 @@ public class GameView : MonoBehaviour
         Apple.text = "もってるりんご:" + AppleCount.ToString();
         Honey.text = "もってるはちみつ:" + HoneyCount.ToString();
         HoneyTrap.text = "もってる罠:" + HoneyTrapCount.ToString();
-
+        Time.text = "残りの時間" + Timer.ToString("F1");
     }
+
+
+    public void GameOverPause()
+    {
+
+        gameOverPauseUI.SetActive(true);
+        StartCoroutine("ChangeSelectScene");
+    }
+
+
+    IEnumerator ChangeSelectScene()
+    {
+        yield return new WaitForSeconds(3);
+
+        SceneManager.LoadScene("StageSelect");
+        yield break;
+    }
+
 
     public void SetAppleCounter(int Apple)
     {
@@ -83,5 +111,15 @@ public class GameView : MonoBehaviour
     {
         HoneyTrapCount = HoneyTrap;//エネミーのまっくすHPをセットする
     }
+
+    public void SetTimer(float Time)
+    {
+        Timer = Time;
+    }
+
+    //public void SetMinute(int Minute)
+    //{
+    //    Minutes = Minute;
+    //}
 
 }
