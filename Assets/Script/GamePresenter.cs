@@ -18,7 +18,8 @@ public class GamePresenter : MonoBehaviour
         _view.Ushiro.AddListener(() => _bear.UshiroStraight());
         _view.Migi.AddListener(() => _bear.MigiStraight());
         _view.Hidari.AddListener(() => _bear.HidariStraight());
-
+        _view.UseApple.AddListener(() => _model.UseAppleCounter());
+        _view.UseHoney.AddListener(() => _model.UseHoneyCDounter());
 
         _apple.AppleTouch.AddListener(() => _model.AfterAppleTouch());
 

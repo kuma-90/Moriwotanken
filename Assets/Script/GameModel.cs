@@ -18,10 +18,6 @@ public class GameModel : MonoBehaviour
     public IntEvent SendHoneyTrapCounter = new IntEvent();
 
 
-    public int _SendAppleCounter;
-    public int _SendHoneyCounter;
-    public int _SendHoneyTrapCounter;
-
 
 
     // Start is called before the first frame update
@@ -39,36 +35,57 @@ public class GameModel : MonoBehaviour
     public void AfterAppleTouch()
     {
         AppleCounter += 1;
-
+        SendApple(AppleCounter);
     }
 
     public void AfterHoneyTouch()
     {
         HoneyCounter += 1;
-
+        SendHoney(HoneyCounter);
     }
 
     public void AfterHoneyTrapTouch()
     {
+        HoneyTrapCounter += 1;
+        SendHoneyTrap(HoneyTrapCounter);
+    }
+
+    public void UseAppleCounter()
+    {
+        if (AppleCounter >= 1)
+        {
+            AppleCounter -= 1;
+            SendApple(AppleCounter);
+        }
 
     }
 
+    public void UseHoneyCDounter()
+    {
+        if (HoneyCounter >= 1)
+        {
+            HoneyCounter -= 1;
+            SendHoney(HoneyCounter);
+        }
+    }
 
     public void SendApple(int Apple)
     {
-        AppleCounter = Apple;
-        SendAppleCounter.Invoke(_SendAppleCounter);
+
+        SendAppleCounter.Invoke(Apple);
     }
 
     public void SendHoney(int Honey)
     {
-        HoneyCounter = Honey;
-        SendHoneyCounter.Invoke(_SendHoneyCounter);
+
+        SendHoneyCounter.Invoke(Honey);
     }
 
     public void SendHoneyTrap(int HoneyTrap)
     {
-        HoneyTrapCounter = HoneyTrap;
-        SendHoneyTrapCounter.Invoke(_SendHoneyTrapCounter);
+
+        SendHoneyTrapCounter.Invoke(HoneyTrap);
     }
+
+
 }

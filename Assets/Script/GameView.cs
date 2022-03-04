@@ -10,6 +10,8 @@ public class GameView : MonoBehaviour
     public UnityEvent Ushiro = new UnityEvent();
     public UnityEvent Hidari = new UnityEvent();
     public UnityEvent Migi = new UnityEvent();
+    public UnityEvent UseApple = new UnityEvent();
+    public UnityEvent UseHoney = new UnityEvent();
 
     public Text Time;
     public Text Apple;
@@ -48,6 +50,16 @@ public class GameView : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             Migi.Invoke();
+        }
+
+        if (Input.GetKey(KeyCode.F))
+        {
+            UseApple.Invoke();
+        }
+
+        if (Input.GetKey(KeyCode.C))
+        {
+            UseHoney.Invoke();
         }
 
         Apple.text = "もってるりんご:" + AppleCount.ToString();
