@@ -1,32 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BearGameModel : MonoBehaviour
 {
-    int speed = 3;
+
+    float currentSpeed = 5;
+
 
     Animator animator;
 
-    public GameObject kumachan;
+
+
+    private Rigidbody rb;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        animator = kumachan.GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         animator.SetBool("Base", true);
+
+
+
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (!Input.anyKey)
+        {
+            animator.SetBool("Base", true);
+            animator.SetBool("Walk", false);
+        }
 
 
     }
 
+
+
     public void MaeStraight()
     {
-        kumachan.transform.position += new Vector3(0, 0, speed) * Time.deltaTime;
+
+        rb.velocity = new Vector3(0, 0, currentSpeed);
+
         animator.SetBool("Walk", true);
         animator.SetBool("Base", false);
 
@@ -34,21 +53,26 @@ public class BearGameModel : MonoBehaviour
 
     public void UshiroStraight()
     {
-        kumachan.transform.position += new Vector3(0, 0, -speed) * Time.deltaTime;
+        rb.velocity = new Vector3(0, 0, -currentSpeed);
+
         animator.SetBool("Walk", true);
         animator.SetBool("Base", false);
     }
 
     public void HidariStraight()
     {
-        kumachan.transform.position += new Vector3(-speed, 0, 0) * Time.deltaTime;
+
+        rb.velocity = new Vector3(-currentSpeed, 0, 0);
+
         animator.SetBool("Walk", true);
         animator.SetBool("Base", false);
     }
 
     public void MigiStraight()
     {
-        kumachan.transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+
+        rb.velocity = new Vector3(currentSpeed, 0, 0);
+
         animator.SetBool("Walk", true);
         animator.SetBool("Base", false);
 

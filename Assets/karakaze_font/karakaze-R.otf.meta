@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3a7bc6fb1f0b34fe99037ab605bdfd8a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - karakazeR
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a8b9074255c0b43b4af060e58947eb53, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

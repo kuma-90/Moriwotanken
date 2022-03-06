@@ -7,7 +7,7 @@ using UnityEngine;
 public class GameModel : MonoBehaviour
 {
 
-    private float countdown = 2.0f;
+    private float countdown = 10.0f;
     private int minute;
 
     private int AppleCounter = 0;
@@ -35,11 +35,7 @@ public class GameModel : MonoBehaviour
     {
         countdown -= Time.deltaTime;
 
-        //if (countdown  60f)
-        //{
-        //    minute += 1;
-        //    countdown = 60.0f;
-        //}
+
         SendTime(countdown);
         if (countdown <= 0)
         {
@@ -47,6 +43,9 @@ public class GameModel : MonoBehaviour
             GameOverBool.Invoke();
         }
     }
+
+
+
 
 
     public void AfterAppleTouch()

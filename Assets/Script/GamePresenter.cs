@@ -10,9 +10,12 @@ public class GamePresenter : MonoBehaviour
     [SerializeField] private HoneyTrapGameModel _honeytrap;
     [SerializeField] private GameView _view;
     [SerializeField] private GameModel _model;
+    [SerializeField] private GameCameraView _camera;
+
     // Start is called before the first frame update
     void Start()
     {
+
 
         _view.Mae.AddListener(() => _bear.MaeStraight());
         _view.Ushiro.AddListener(() => _bear.UshiroStraight());
@@ -35,6 +38,9 @@ public class GamePresenter : MonoBehaviour
         _model.SendHoneyTrapCounter.AddListener((HoneyTrap) => _view.SetHoneyTrapCounter(HoneyTrap));
         _model.SendTimer.AddListener((Time) => _view.SetTimer(Time));
         _model.GameOverBool.AddListener(() => _view.GameOverPause());
+
+
+        _view.ChangeCamera.AddListener(() => _camera.CameraChange());
 
     }
 }

@@ -13,6 +13,7 @@ public class GameView : MonoBehaviour
     public UnityEvent Migi = new UnityEvent();
     public UnityEvent UseApple = new UnityEvent();
     public UnityEvent UseHoney = new UnityEvent();
+    public UnityEvent ChangeCamera = new UnityEvent();
 
 
     public Text Time;
@@ -70,6 +71,11 @@ public class GameView : MonoBehaviour
         if (Input.GetKey(KeyCode.C))
         {
             UseHoney.Invoke();
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            ChangeCamera.Invoke();
         }
 
         Apple.text = "もってるりんご:" + AppleCount.ToString();
