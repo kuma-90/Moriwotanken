@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 40843570}
   - component: {fileID: 40843569}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Story
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.05660379, g: 0.05660379, b: 0.05660379, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -463,7 +463,7 @@ Transform:
   - {fileID: 535733455}
   - {fileID: 111038798}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &154309633
 PrefabInstance:
@@ -1369,12 +1369,17 @@ MonoBehaviour:
   ChangeCamera:
     m_PersistentCalls:
       m_Calls: []
+  TimeText: {fileID: 223715860}
+  AppleText: {fileID: 698972454}
+  HoneyText: {fileID: 736617523}
+  HoneyTrapText: {fileID: 941369362}
   Time: {fileID: 223715862}
   Apple: {fileID: 698972456}
   Honey: {fileID: 736617525}
   HoneyTrap: {fileID: 941369364}
   gameClearPauseUI: {fileID: 155314352}
   gameOverPauseUI: {fileID: 247621364}
+  storyUI: {fileID: 40843567}
 --- !u!114 &257689361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1407,6 +1412,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverBool:
+    m_PersistentCalls:
+      m_Calls: []
+  GameClearBool:
+    m_PersistentCalls:
+      m_Calls: []
+  StoryBoardBoolTrue:
+    m_PersistentCalls:
+      m_Calls: []
+  StoryBoardBoolFalse:
     m_PersistentCalls:
       m_Calls: []
 --- !u!4 &257689365
@@ -1924,8 +1938,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -100}
-  m_SizeDelta: {x: 600, y: 600}
+  m_AnchoredPosition: {x: 10, y: -64}
+  m_SizeDelta: {x: 650, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &581035647
 MonoBehaviour:
@@ -1940,7 +1954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1948,8 +1962,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 9031a8d406c33417890b49d32dcb60b3, type: 3}
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1959,7 +1973,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.5
   m_Text: "\u3042\u308B\u3068\u3053\u308D\u306B\u4E00\u5339\u306E\u304F\u307E\u304C\u3044\u305F\n\u304F\u307E\u306F\u3001\u6BCE\u65E5\u68EE\u3067\u306F\u3061\u307F\u3064\u3068\u30EA\u30F3\u30B4\u3092\u98DF\u3079\u3066\u306E\u3093\u3073\u308A\u904E\u3054\u3057\u3066\u3044\u305F\u3002\n\u3068\u3053\u308D\u304C\u3001\u6628\u4ECA\u306E\u90FD\u5E02\u958B\u767A\u306E\u5F71\u97FF\u3067\u3001\u4F4F\u3093\u3067\u3044\u308B\u68EE\u304B\u3089\u3001\u308A\u3093\u3054\u306E\u6728\u306F\u6E1B\u308A\u3001\u8702\u305F\u3061\u306E\u6D3B\u52D5\u3082\u6E1B\u3063\u3066\u3057\u307E\u3063\u305F\u3002\n\u304F\u307E\u306F\u3001\u98DF\u3079\u308B\u306F\u3061\u307F\u3064\u3082\u308A\u3093\u3054\u3082\u5931\u3044\u304B\u3051\u3066\u3044\u308B\n\u305D\u3053\u3067\u3001\u65B0\u305F\u306A\u68EE\u3067\u98DF\u3079\u308B\u306F\u3061\u307F\u3064\u3084\u30EA\u30F3\u30B4\u3092\u63A2\u3059\u65C5\u306B\u51FA\u304B\u3051\u308B\u3002\n\u65B0\u3057\u3044\u68EE\u3067\u306F\u3001\u307E\u3060\u8702\u305F\u3061\u3068\u306F\u4EF2\u826F\u304F\u6163\u308C\u3066\u3044\u306A\u3044\u306E\u3067\u3001\u8702\u306E\u5DE3\u306B\u306F\u8981\u6CE8\u610F\u3060\u3002"
 --- !u!222 &581035648
 CanvasRenderer:
@@ -5378,7 +5392,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1896157701
 PrefabInstance:

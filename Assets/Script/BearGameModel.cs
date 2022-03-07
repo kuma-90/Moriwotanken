@@ -11,9 +11,8 @@ public class BearGameModel : MonoBehaviour
 
     Animator animator;
 
-
-
     private Rigidbody rb;
+
 
 
     // Start is called before the first frame update
@@ -38,6 +37,7 @@ public class BearGameModel : MonoBehaviour
 
 
     }
+
 
 
 

@@ -15,6 +15,11 @@ public class GameView : MonoBehaviour
     public UnityEvent UseHoney = new UnityEvent();
     public UnityEvent ChangeCamera = new UnityEvent();
 
+    public GameObject TimeText;
+    public GameObject AppleText;
+    public GameObject HoneyText;
+    public GameObject HoneyTrapText;
+
 
     public Text Time;
     public Text Apple;
@@ -32,7 +37,8 @@ public class GameView : MonoBehaviour
     private GameObject gameClearPauseUI;
     [SerializeField]
     private GameObject gameOverPauseUI;
-
+    [SerializeField]
+    private GameObject storyUI;
 
     // Start is called before the first frame update
     void Start()
@@ -92,6 +98,30 @@ public class GameView : MonoBehaviour
         StartCoroutine("ChangeSelectScene");
     }
 
+    public void GameClearPause()
+    {
+
+        gameClearPauseUI.SetActive(true);
+        StartCoroutine("ChangeSelectScene");
+    }
+
+    public void StoryBoolTrue()
+    {
+        storyUI.SetActive(true);
+        TimeText.SetActive(false);
+        AppleText.SetActive(false);
+        HoneyText.SetActive(false);
+        HoneyTrapText.SetActive(false);
+    }
+
+    public void StoryBoolFalse()
+    {
+        storyUI.SetActive(false);
+        TimeText.SetActive(true);
+        AppleText.SetActive(true);
+        HoneyText.SetActive(true);
+        HoneyTrapText.SetActive(true);
+    }
 
     IEnumerator ChangeSelectScene()
     {

@@ -22,12 +22,14 @@ public class GameModel : MonoBehaviour
     public FloatEvent SendTimer = new FloatEvent();
 
     public UnityEvent GameOverBool = new UnityEvent();
-
+    public UnityEvent GameClearBool = new UnityEvent();
+    public UnityEvent StoryBoardBoolTrue = new UnityEvent();
+    public UnityEvent StoryBoardBoolFalse = new UnityEvent();
 
     // Start is called before the first frame update
     void Start()
     {
-
+        StartCoroutine("StoryBoard");
     }
 
     // Update is called once per frame
@@ -42,10 +44,26 @@ public class GameModel : MonoBehaviour
             countdown = 0;
             GameOverBool.Invoke();
         }
+        if (HoneyCounter == 20)
+        {
+            GameClearBool.Invoke();
+        }
+
+        if (HoneyTrapCounter == 3)
+        {
+            GameOverBool.Invoke();
+        }
+
     }
 
 
+    IEnumerator StoryBoard()
+    {
+        StoryBoardBoolTrue.Invoke();
 
+        yield return new WaitForSeconds(10);
+        StoryBoardBoolFalse.Invoke();
+    }
 
 
     public void AfterAppleTouch()

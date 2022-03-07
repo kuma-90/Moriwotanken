@@ -38,7 +38,9 @@ public class GamePresenter : MonoBehaviour
         _model.SendHoneyTrapCounter.AddListener((HoneyTrap) => _view.SetHoneyTrapCounter(HoneyTrap));
         _model.SendTimer.AddListener((Time) => _view.SetTimer(Time));
         _model.GameOverBool.AddListener(() => _view.GameOverPause());
-
+        _model.GameClearBool.AddListener(() => _view.GameClearPause());
+        _model.StoryBoardBoolTrue.AddListener(() => _view.StoryBoolTrue());
+        _model.StoryBoardBoolFalse.AddListener(() => _view.StoryBoolFalse());
 
         _view.ChangeCamera.AddListener(() => _camera.CameraChange());
 
