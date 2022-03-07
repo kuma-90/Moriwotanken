@@ -44,7 +44,7 @@ public class GameModel : MonoBehaviour
             countdown = 0;
             GameOverBool.Invoke();
         }
-        if (HoneyCounter == 20)
+        if (HoneyCounter == 10)
         {
             GameClearBool.Invoke();
         }
