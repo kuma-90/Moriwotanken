@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 333831d6661c6428abe186c426b85fcd
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - 07NikumaruFont
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 9031a8d406c33417890b49d32dcb60b3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

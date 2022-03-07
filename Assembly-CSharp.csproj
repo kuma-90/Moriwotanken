@@ -73,12 +73,17 @@
     <Compile Include="Assets/Script/StartModel.cs" />
     <Compile Include="Assets/TeddyBear1.3/scripts/Teddy3d.cs" />
     <Compile Include="Assets/Script/GameCameraView.cs" />
+    <Compile Include="Assets/Script/StageSelectBearModel.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/Fantasy Forest Environment Free Sample/StandardNoCulling.shader" />
-     <None Include="Assets/karakaze_font/readme.txt" />
+     <None Include="Assets/Font/NikumaruFont/ReadMe_Windows.txt" />
+     <None Include="Assets/Font/karakaze_font/readme.txt" />
+     <None Include="Assets/Font/NikumaruFont/ReadMe_Mac.txt" />
      <None Include="Assets/Ground materials FD/Information package.txt" />
+     <None Include="Assets/MenuBoard/Doc/ChangeLogs.txt" />
      <None Include="Assets/Grass And Flowers Pack 1/Example Scene/Skyboxes/_skybox info.txt" />
+     <None Include="Assets/MenuBoard/Doc/ReadMe.txt" />
     <Reference Include="UnityEngine">
       <HintPath>/Users/tsukatanikeina/Downloads/unity/2020.2.7f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -7,7 +7,7 @@ using UnityEngine;
 public class GameModel : MonoBehaviour
 {
 
-    private float countdown = 10.0f;
+    private float countdown = 30.0f;
     private int minute;
 
     private int AppleCounter = 0;

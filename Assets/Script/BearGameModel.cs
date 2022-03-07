@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class BearGameModel : MonoBehaviour
 {
 
-    float currentSpeed = 5;
+    float currentSpeed = 8;
 
 
     Animator animator;
