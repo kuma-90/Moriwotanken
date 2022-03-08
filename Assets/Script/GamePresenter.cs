@@ -22,7 +22,7 @@ public class GamePresenter : MonoBehaviour
         _view.Migi.AddListener(() => _bear.MigiStraight());
         _view.Hidari.AddListener(() => _bear.HidariStraight());
         _view.UseApple.AddListener(() => _model.UseAppleCounter());
-        _view.UseHoney.AddListener(() => _model.UseHoneyCDounter());
+        _view.UseHoney.AddListener(() => _model.UseHoneyCounter());
 
         _apple.AppleTouch.AddListener(() => _model.AfterAppleTouch());
 
@@ -41,6 +41,7 @@ public class GamePresenter : MonoBehaviour
         _model.GameClearBool.AddListener(() => _view.GameClearPause());
         _model.StoryBoardBoolTrue.AddListener(() => _view.StoryBoolTrue());
         _model.StoryBoardBoolFalse.AddListener(() => _view.StoryBoolFalse());
+        _model.SpeedChange.AddListener(() => _bear.SpeedChange());
 
         _view.ChangeCamera.AddListener(() => _camera.CameraChange());
 

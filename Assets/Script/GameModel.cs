@@ -25,6 +25,7 @@ public class GameModel : MonoBehaviour
     public UnityEvent GameClearBool = new UnityEvent();
     public UnityEvent StoryBoardBoolTrue = new UnityEvent();
     public UnityEvent StoryBoardBoolFalse = new UnityEvent();
+    public UnityEvent SpeedChange = new UnityEvent();
 
     // Start is called before the first frame update
     void Start()
@@ -89,12 +90,14 @@ public class GameModel : MonoBehaviour
         if (AppleCounter >= 1)
         {
             AppleCounter -= 1;
+
             SendApple(AppleCounter);
+            SpeedChange.Invoke();
         }
 
     }
 
-    public void UseHoneyCDounter()
+    public void UseHoneyCounter()
     {
         if (HoneyCounter >= 1)
         {

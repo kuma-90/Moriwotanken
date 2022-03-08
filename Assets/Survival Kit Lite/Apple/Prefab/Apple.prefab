@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23964813619247538}
   - component: {fileID: 708670703}
   - component: {fileID: 708670704}
+  - component: {fileID: 6097635952499773678}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -110,5 +111,20 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5736207, y: 0.5498075, z: 0.5736207}
-  m_Center: {x: -0.0000024735928, y: 0.06987905, z: -0.0055559725}
+  m_Size: {x: 0.6549187, y: 0.70217586, z: 0.5736207}
+  m_Center: {x: 0.040646553, y: 0.14606315, z: -0.0055559874}
+--- !u!114 &6097635952499773678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105760525757012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bc7fbbd9cde4662a28daad1cb412c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AppleTouch:
+    m_PersistentCalls:
+      m_Calls: []

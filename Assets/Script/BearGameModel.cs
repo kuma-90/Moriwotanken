@@ -78,4 +78,9 @@ public class BearGameModel : MonoBehaviour
 
     }
 
+    public void SpeedChange()
+    {
+        currentSpeed = 10;
+    }
+
 }

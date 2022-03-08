@@ -3644,12 +3644,17 @@ MonoBehaviour:
   ChangeCamera:
     m_PersistentCalls:
       m_Calls: []
+  TimeText: {fileID: 2084937623}
+  AppleText: {fileID: 2032788023}
+  HoneyText: {fileID: 1023711860}
+  HoneyTrapText: {fileID: 1111013874}
   Time: {fileID: 2084937625}
   Apple: {fileID: 2032788025}
   Honey: {fileID: 1023711862}
   HoneyTrap: {fileID: 1111013876}
   gameClearPauseUI: {fileID: 1123610028}
   gameOverPauseUI: {fileID: 1869384487}
+  storyUI: {fileID: 328433414}
 --- !u!114 &1451229578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3682,6 +3687,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverBool:
+    m_PersistentCalls:
+      m_Calls: []
+  GameClearBool:
+    m_PersistentCalls:
+      m_Calls: []
+  StoryBoardBoolTrue:
+    m_PersistentCalls:
+      m_Calls: []
+  StoryBoardBoolFalse:
+    m_PersistentCalls:
+      m_Calls: []
+  SpeedChange:
     m_PersistentCalls:
       m_Calls: []
 --- !u!4 &1451229580
