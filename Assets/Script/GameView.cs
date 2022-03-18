@@ -84,6 +84,11 @@ public class GameView : MonoBehaviour
             ChangeCamera.Invoke();
         }
 
+        if (Input.GetKey(KeyCode.L))
+        {
+            StoryBoolFalse();
+        }
+
         Apple.text = "もってるりんご:" + AppleCount.ToString();
         Honey.text = "もってるはちみつ:" + HoneyCount.ToString();
         HoneyTrap.text = "もってる罠:" + HoneyTrapCount.ToString();
